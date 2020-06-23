@@ -4,6 +4,16 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    "gatsby-plugin-route-dictionary",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerMode: "static",
+        reportFilename: "_bundle.html",
+        openAnalyzer: false,
+      },
+    },
+    "gatsby-disable-prefetch",
   ],
   // Customize your site metadata:
   siteMetadata: {
